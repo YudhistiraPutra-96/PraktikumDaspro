@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 public class SiakadFor29 {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
         double nilai, tertinggi = 0, terendah = 100;
         int jumlahlulus = 0, jumlahtidaklulus = 0;
 
         for (int i = 1; i <= 10; i++) {
-            Scanner scanner = new Scanner(System.in);
             System.out.print("Masukkan nilai mahasiswa ke-" + i + ": ");
             nilai = scanner.nextDouble();
 
