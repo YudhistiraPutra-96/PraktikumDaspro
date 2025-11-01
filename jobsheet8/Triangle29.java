@@ -13,6 +13,7 @@ public class Triangle29 {
                 System.out.print("*");
                 j++;
             }
+            System.out.println();
             i++;
         }
     }
