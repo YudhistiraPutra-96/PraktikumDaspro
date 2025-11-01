@@ -8,6 +8,8 @@ public class NilaiKelompok29 {
         double totalNilai;
         double rataNilai;
         double nilai;
+        double maxRataNilai = 0;
+        int kelompokTerbaik = 0;
 
         while (i <= 6) { 
             System.out.println("Kelompok " + i); 
@@ -20,7 +22,17 @@ public class NilaiKelompok29 {
             
             rataNilai = totalNilai / 5; 
             System.out.println("Kelompok " + i + ": nilai rata-rata = " + rataNilai);
+
+            if (rataNilai > maxRataNilai) {
+                maxRataNilai = rataNilai;
+                kelompokTerbaik = i;
+            }
+
             i++; 
         }
+        
+        System.out.println("\n=== HASIL TERBAIK ===");
+        System.out.println("Kelompok dengan nilai rata-rata tertinggi: Kelompok " + kelompokTerbaik);
+        System.out.println("Dengan nilai: " + maxRataNilai);
     }
 }
