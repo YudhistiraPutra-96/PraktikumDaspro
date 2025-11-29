@@ -3,8 +3,8 @@ package jobsheet11;
 public class PengunjungCafe29 {
    static void daftarPengunjung(String... namePengunjung) {
         System.out.println("Daftar Nama Pengunjung:");
-        for(int i = 0; i < namePengunjung.length; i++) {
-            System.out.println("- " + namePengunjung[i]);
+        for(String nama : namePengunjung) {
+            System.out.println("- " + nama);
         }
     }
 
